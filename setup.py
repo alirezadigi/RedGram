@@ -5,13 +5,13 @@ from setuptools import setup
 HERE = pathlib.Path(__file__).parent
 
 # The text of the README file
-README = ("README.md").read_text()
+README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
     name="RedGram",
     version="0.9.0",
-    description="A Simple yet Powerfull TelegramBotApi Lib!"
+    description="A Simple yet Powerfull TelegramBotApi Lib!",
     long_description=README,
     long_description_content_type="text/markdown",
     url="",
